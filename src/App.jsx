@@ -3,11 +3,12 @@ import ReactDOM from "react-dom"
 import { DatasetSelect, GeneEnter } from "./components.jsx"
 import * as DDplot from "./d33d.js"
 
+let SERVER
 if (window.location.hostname == "karlssonlab.github.io") {
-    const SERVER =  "https://sci-net.org/nabovis";
+    SERVER =  "https://sci-net.org/nabovis";
 }
 else {
-    const SERVER = "http://127.0.0.1:10752/nabovis";    
+    SERVER = "http://127.0.0.1:10752/nabovis";    
 }
 
 
